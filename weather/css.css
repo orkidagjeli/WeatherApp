@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d8ebff;
+    margin: 0;
+    padding: 20px;
+    background-image: url('https://gtavguide.wordpress.com/wp-content/uploads/2013/07/beach-weather-background1.png?w=848'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weather-card {
+    border-radius: 20px; 
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-size: contain; 
+    background-size: cover; 
+    background-position: center; 
+    width: 100%; 
+    max-width: 1150px; 
+    height: 300px; 
+    margin: auto; 
+    margin-bottom: 80px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.weather-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+
+.weather-card .mask {
+    background-color: rgba(190, 216, 232, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.weather-card .card-img-overlay {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: #471c1c;
+}
+
+
+.weather-card .card-img-overlay p,
+.weather-card .card-img-overlay h5 {
+    margin: 0; 
+}
+
+
+.weather-card .card-img-overlay p {
+    font-size: 2em; 
+    color: #000000; 
+}
+
+.weather-card .card-img-overlay h5 {
+    font-size: 1.2em; 
+    color: #101b96; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 90px; 
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #7cbde2;
+    color: #ffffff;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+.floating-table {
+    margin: auto;
+    width: 80%;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.weather-icon {
+    width: 40px; 
+    height: 40px;
+    object-fit: cover; 
+}
